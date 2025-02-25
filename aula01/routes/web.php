@@ -6,6 +6,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/entrada','App\Http\Controllers\EntradaController@index');
+Route::get('/entrada', function () {
+    return view('entrada');
+});
 
-Route::get('/usuario','App\Http\Controllers\UsuarioController@index');
+Route::get('/usuario', function () {
+    return view('usuario');
+});
+
